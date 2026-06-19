@@ -21,7 +21,7 @@
         "source": "git-subdir",
         "url": "https://github.com/genvid-holdings/claude-code-plugin-genvid-c3.git",
         "path": "plugin",
-        "ref": "v1.5.0"
+        "ref": "v1.6.0"
       },
       "description": "Construct 3 platform knowledge, C3 agents (c3-explorer, c3-implementer), bundled MCP servers, and a convention audit"
     }
