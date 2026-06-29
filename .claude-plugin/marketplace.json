@@ -16,12 +16,12 @@
       "description": "Shared Claude Code skills, agents, and hooks for Genvid game projects"
     },
     {
-      "name": "genvid-c3",
+      "name": "gvt-construct3",
       "source": {
         "source": "git-subdir",
-        "url": "https://github.com/genvid-holdings/claude-code-plugin-genvid-c3.git",
+        "url": "https://github.com/GenvidTechnologies/claude-code-plugin-gvt-construct3.git",
         "path": "plugin",
-        "ref": "v1.6.0"
+        "ref": "v2.0.0"
       },
       "description": "Construct 3 platform knowledge, C3 agents (c3-explorer, c3-implementer), bundled MCP servers, and a convention audit"
     }
