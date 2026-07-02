@@ -1,17 +1,17 @@
 {
-  "name": "genvid-plugins",
+  "name": "gvt-plugins",
   "description": "Genvid's Claude Code plugin marketplace",
   "owner": {
     "name": "Genvid"
   },
   "plugins": [
     {
-      "name": "genvid-dev",
+      "name": "gvt-dev",
       "source": {
         "source": "git-subdir",
-        "url": "https://github.com/genvid-holdings/claude-code-plugin-genvid-dev.git",
+        "url": "https://github.com/GenvidTechnologies/claude-code-plugin-gvt-dev.git",
         "path": "plugin",
-        "ref": "v3.5.1"
+        "ref": "v4.0.0"
       },
       "description": "Shared Claude Code skills, agents, and hooks for Genvid game projects"
     },
