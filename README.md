@@ -1,33 +1,34 @@
-# claude-code-marketplace
+# claude-code-gvt-marketplace
 
-Genvid's [Claude Code plugin marketplace](https://code.claude.com/docs/en/plugin-marketplaces) (catalog name `genvid-plugins`).
+Genvid's [Claude Code plugin marketplace](https://code.claude.com/docs/en/plugin-marketplaces) (catalog name `gvt-plugins`).
 
-This repo holds **only the catalog** (`.claude-plugin/marketplace.json`). Each plugin lives in its own repository and is referenced from the catalog by a pinned commit.
+This repo holds **only the catalog** (`.claude-plugin/marketplace.json`). Each plugin lives in its own repository and is referenced from the catalog by a pinned release tag.
 
 ## Plugins
 
 | Plugin | Repo | Install |
 |--------|------|---------|
-| `genvid-dev` | [`claude-code-plugin-genvid-dev`](https://github.com/genvid-holdings/claude-code-plugin-genvid-dev) | `genvid-dev@genvid-plugins` |
+| `gvt-dev` | [`claude-code-plugin-gvt-dev`](https://github.com/GenvidTechnologies/claude-code-plugin-gvt-dev) | `gvt-dev@gvt-plugins` |
+| `gvt-construct3` | [`claude-code-plugin-gvt-construct3`](https://github.com/GenvidTechnologies/claude-code-plugin-gvt-construct3) | `gvt-construct3@gvt-plugins` |
 
 ## Install
 
 ```text
-/plugin marketplace add https://github.com/genvid-holdings/claude-code-marketplace.git
-/plugin install genvid-dev@genvid-plugins
+/plugin marketplace add https://github.com/GenvidTechnologies/claude-code-gvt-marketplace.git
+/plugin install gvt-dev@gvt-plugins
 ```
 
 ## How plugins are referenced
 
-Each entry in `marketplace.json` uses a `url` source pointing at the plugin repo, pinned to a specific commit via the `sha` field. Pinning means consumers get a reproducible install and updates are deliberate.
+Each entry in `marketplace.json` sources the plugin from its own repo, pinned to a specific release tag via the `ref` field. Pinning means consumers get a reproducible install and updates are deliberate. A plugin whose shipped artifact lives in a subfolder of its repo uses a `git-subdir` source with a `path`; a plugin at its repo root uses a `url` source.
 
 ### Releasing a plugin update
 
 1. Push the change to the plugin repo's default branch.
-2. Get the new commit SHA: `git rev-parse HEAD` in the plugin repo.
-3. Update that plugin's `sha` in `.claude-plugin/marketplace.json` here and push.
-4. Consumers run `/plugin update <plugin>@genvid-plugins`.
+2. Tag the release `vX.Y.Z` and push the tag.
+3. Update that plugin's `ref` in `.claude-plugin/marketplace.json` here and push.
+4. Consumers run `/plugin update <plugin>@gvt-plugins`.
 
 ## Adding a new plugin
 
-Add an entry to the `plugins` array in `.claude-plugin/marketplace.json` with the plugin's `name`, a `url` source pointing at its repo, a pinned `sha`, and a `description`. Validate with `claude plugin validate .`.
+Add an entry to the `plugins` array in `.claude-plugin/marketplace.json` with the plugin's `name`, a source pointing at its repo (a `url` source for a root plugin, or a `git-subdir` source with a `path` for a subfolder plugin), a pinned `ref` tag, and a `description`. Validate with `claude plugin validate .`.
