@@ -11,7 +11,7 @@
         "source": "git-subdir",
         "url": "https://github.com/GenvidTechnologies/claude-code-plugin-gvt-dev.git",
         "path": "plugin",
-        "ref": "v4.0.0"
+        "ref": "v4.1.0"
       },
       "description": "Shared Claude Code skills, agents, and hooks for Genvid game projects"
     },
