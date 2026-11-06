@@ -24,6 +24,16 @@
         "ref": "v3.4.0"
       },
       "description": "Construct 3 platform knowledge, C3 agents (c3-explorer, c3-implementer), bundled MCP servers, and a convention audit"
+    },
+    {
+      "name": "gvt-fleet",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/GenvidTechnologies/claude-code-plugin-gvt-fleet.git",
+        "path": "plugin",
+        "ref": "v0.1.0"
+      },
+      "description": "The /gvt-fleet:coach skill, the coach's entry point for the gvt-fleet multi-repo coordinator; it runs in a gvt-fleet workspace."
     }
   ]
 }
