@@ -34,6 +34,16 @@
         "ref": "v0.2.0"
       },
       "description": "The /gvt-fleet:coach skill, the coach's entry point for the gvt-fleet multi-repo coordinator; it runs in a gvt-fleet workspace."
+    },
+    {
+      "name": "gvt-wiki",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/GenvidTechnologies/claude-code-plugin-gvt-wiki.git",
+        "path": "plugin",
+        "ref": "v0.1.0"
+      },
+      "description": "An LLM-maintained project wiki: the maintain-wiki skill (ingest, query, lint), the wiki-librarian and wiki-editor agents, and the wiki-lint checker"
     }
   ]
 }
