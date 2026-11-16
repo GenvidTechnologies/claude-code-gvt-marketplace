@@ -41,7 +41,7 @@
         "source": "git-subdir",
         "url": "https://github.com/GenvidTechnologies/claude-code-plugin-gvt-wiki.git",
         "path": "plugin",
-        "ref": "v0.1.0"
+        "ref": "v0.1.1"
       },
       "description": "An LLM-maintained project wiki: the maintain-wiki skill (ingest, query, lint), the wiki-librarian and wiki-editor agents, and the wiki-lint checker"
     }
