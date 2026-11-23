@@ -11,7 +11,7 @@
         "source": "git-subdir",
         "url": "https://github.com/GenvidTechnologies/claude-code-plugin-gvt-dev.git",
         "path": "plugin",
-        "ref": "v6.1.0"
+        "ref": "v6.2.0"
       },
       "description": "Shared Claude Code skills, agents, and hooks for Genvid game projects"
     },
@@ -41,7 +41,7 @@
         "source": "git-subdir",
         "url": "https://github.com/GenvidTechnologies/claude-code-plugin-gvt-wiki.git",
         "path": "plugin",
-        "ref": "v0.2.0"
+        "ref": "v0.3.0"
       },
       "description": "An LLM-maintained project wiki: the maintain-wiki skill (ingest, query, lint), the wiki-librarian and wiki-editor agents, and the wiki-lint checker"
     }
